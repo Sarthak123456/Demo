@@ -1,0 +1,343 @@
+/* fix for broken search box */
+/*http://stackoverflow.com/questions/36825618/materialize-css-navbar-search-is-broken*/
+input[type="search"] {
+  height: 64px !important; /* or height of nav */
+}
+body {
+    background-color: #eeeeee;
+}
+main{
+  padding-left: 250px;
+}
+
+.container{
+  width: 90%;
+  padding-top: 3rem;
+  margin-left: 4%;
+}
+.bold{
+  font-weight: 600 !important
+}
+#slide-out{
+  top:65px;
+  padding-top: 5em;
+
+}
+.material-icons{
+  font-size: 2.2rem !important;
+}
+
+.vdivider{
+  width: 1px;
+  overflow: hidden;
+  height: 200px;
+  background: #e0e0e0;
+}
+
+.profile_pic{
+  margin: 10px 25px;
+}
+
+.logo_text{
+  color: cornflowerblue;
+  font-size: 1.0em;
+  font-weight: 300;
+}
+.logo{
+  display: inline-flex;
+}
+.headline{
+  color: #ddd;
+  font-size: 1.3em;
+  font-weight: 200;
+  margin: 0 0 0 30%;
+  position: absolute;
+}
+.logo.headline{
+  text-align: center;
+}
+.nav_items{
+  color: silver;
+  padding-left: 30px;
+  padding: 10px;
+  
+}
+.pad0{
+  padding: 0px;
+}
+.nav_items:hover{
+  transition: ease-in-out 0.1s;
+  border-right: 5px solid gold;
+  background: #3f3f3f;
+}
+.nav_text{
+  margin: 0 0 0 40%;
+  font-size: 1.0em;
+  font-weight: 300;
+}
+.nav_icon{
+  margin: 10px;
+}
+
+.content-title{
+  color: cornflowerblue;
+  font-size: 1.0em;
+  font-weight: 800;
+
+}
+.list{
+  padding: 20px!important;
+}
+.list > li{
+  list-style-type: disc!important;
+  font-size: 0.9em;
+}
+
+.file_name{
+  font-size: 0.9em;
+  margin: 5px 10px;
+}
+
+.card1{
+  display: inline-flex;
+}
+
+.card_content_b{
+  border-left: 1px solid #efefef;
+}
+.card-title{
+  padding: 10px 0px 10px 10px;
+}
+.loader{
+  padding-top: 0px!important;
+}
+
+.left_list{
+  float: left;
+}
+.right_list{
+  float: right;
+}
+.card4{
+  overflow: hidden;
+}
+.left> li{
+text-align: left;
+padding: 5px;
+color: silver;
+  
+}
+.right> li{
+ text-align: right;
+ padding: 5px;
+ color: silver;
+
+}
+.left> li::before{
+    content: "";
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    display: block;
+    width: 1000%;
+    margin:1px;
+}
+.left> li:last-child::after{
+    content: "";
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    display: block;
+    width: 1000%;
+    margin:1px;
+}
+
+.applicants> li::before{
+    content: "";
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    display: block;
+    margin:1px;
+}
+.applicants> li:last-child::after{
+    content: "";
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    display: block;
+    margin:1px;
+}
+.applicants> li:first-child::before{
+    content: "";
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    display: block;
+}
+.list_text{
+  color: rgba(54, 162, 235);
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.card_content_a{
+  overflow: hidden;;
+}
+
+@media only screen and (max-width: 992px){
+  main{
+    padding-left: 0px;
+  }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .profile_pic {
+    margin: 10px 6px 0 6px;
+}
+
+.logo> img{
+  width: 30px;
+  height: 30px;
+}
+
+.logo_text{
+  font-size: 0.8em;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 600px) and (orientation:landscape){
+
+  .list {
+    padding: 4px!important;
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .profile_pic {
+    margin: 12px 6px 0 0px;
+}
+
+.headline{
+      margin: 0 0 0 3%;
+}
+.file_name{
+  font-size: 0.7em;
+  margin: 0px 5px 0px 17px;
+}
+
+.tiny{
+  font-size: 1em!important;
+  position: absolute;
+  
+}
+.list{
+  padding: 10px!important;
+}
+.card .card-content{
+  padding:10px;
+}
+
+.card .card-title{
+  font-size:26px;
+}
+
+}
+
+@media only screen and (min-width: 600px) {
+    .profile_pic {
+    margin: 4px 4px 0 5px;
+}
+
+.headline{
+      margin: 0 0 0 3%;
+}
+.file_name{
+  font-size: 0.7em;
+  margin: 0px 40px 0px 16px;
+}
+
+.tiny{
+  font-size: 1em!important;
+  position: absolute;
+  
+}
+.list{
+  padding: 10px!important;
+}
+.card .card-content{
+  padding:10px;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .profile_pic {
+    margin:  8px 10px 0 10px;
+}
+
+.headline{
+      margin: 0 0 0 15%;
+}
+
+.list{
+  padding: 10px!important;
+}
+.card .card-content{
+  padding:10px;
+}
+
+.file_name{
+  font-size: 0.7em;
+  margin: 0px 40px 0px 16px;
+}
+
+.tiny{
+  font-size: 1.2em!important;
+  position: absolute;
+  
+}
+.shrink{
+  margin: 20px!important;
+}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .headline{
+      margin: 0 0 0 30%;
+}
+.list{
+  padding: 20px!important;
+}
+.shrink{
+  margin: 20px!important;
+}
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

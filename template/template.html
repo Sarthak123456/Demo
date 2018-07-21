@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/custom_styles.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="iconfont/material-icons.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <header>
+      <ul id="slide-out" class="side-nav fixed grey darken-3">
+        <li class="nav_items"><i class="material-icons left nav_icon">dashboard</i><span class="nav_text">Overview</span></li>
+        <li class="nav_items"><i class="material-icons left nav_icon">assignment_ind</i><span class="nav_text">Candidates</span></li>
+        <li class="nav_items"><i class="material-icons left nav_icon">timeline</i><span class="nav_text">Analytics</span></li>
+      </ul>
+
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper white">
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons black-text">menu</i></a>
+            <span class="logo responsive-img"><img src='img/business-support-2-b.png' class='profile_pic' width='50' height="50" />
+            <span class="logo_text">Welcome, Floyd!</span>
+            </span>
+            <span class="headline">Dashboard</span>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <!-- Page Content goes here -->
+        <div class="row shrink">
+          <div id='rem' class="col s12 m12 l7 offset-m3">
+
+            <div class="card">
+              <div class="card-title">
+                <i class="material-icons grey-text text-darken-1 left">remove_red_eye</i>
+                <span class="bold">Candidate Profile: Syd Barret</span>
+                <span><a class="waves-effect waves-light btn-flat right pad0"><i class="material-icons">keyboard_arrow_right</i></a></span>
+                <span><a class="waves-effect waves-light btn-flat right pad0"><i class="material-icons">keyboard_arrow_left</i></a></span>
+              </div>
+              <div class="divider"></div>
+              <div class="card-content card1">
+                <section class="col s12 m6 l7 xl6 card_content_a">
+                <h6 class='content-title'>Experience: </h6>
+                <ul class="list">
+                  <li>
+                    2014-2016 - Senior Sofware Engineer,<br>
+                    Google
+                  </li>
+
+                  <li>
+                    2012-2014 - Sofware Engineer at <br>
+                    Microsoft
+                  </li>
+
+
+                </ul>
+                <i class="material-icons tiny">insert_drive_file</i>
+                <span class="file_name">SYD+BARRET_Bangaluru.docx</span>
+
+               
+                </section>
+
+                <section class="col s12 m6  l5 xl6 card_content_b">
+                <h6 class='content-title'>Highlights: </h6>
+                <ul class="list">
+                  <li>
+                     Filed three patents.
+                  </li>
+
+                  <li>
+                      Published HPCA paper on Multicore Architecture.
+                  </li>
+
+
+                </ul>
+
+               
+                </section>
+
+
+              </div>
+            </div>
+
+          </div>
+
+          <div id='rem'  class="col s12 m12 l5 offset-m3">
+            <div class="card">
+              <div class="card-title valign-wrapper">
+                <i class="valign material-icons grey-text text-darken-1 left">hourglass_empty</i>
+                <span class="bold">Resume processing queue</span>
+              </div>
+              <div class="divider"></div>
+              <div class="card-content card2">
+                <div class="section loader">
+                  <p>DAVID+GILMOUR_Bengaluru.docx</p>
+                  <div class="progress  blue lighten-4">
+                    <div class="determinate blue" style="width: 0%"></div>
+                  </div>
+                </div>
+                <div class="section loader">
+                  <p>ROGER+WATER.docs.pdf</p>
+                  <div class="progress  blue lighten-4">
+                    <div class="determinate blue" style="width: 0%"></div>
+                  </div>
+                </div>
+                <div class="section loader">
+                  <p>NICK+MANSON.docx</p>
+                  <div class="progress  blue lighten-4">
+                    <div class="determinate blue" style="width: 40%"></div>
+                  </div>
+                </div>
+                <div class="section loader">
+                  <p>RICHARD+WRIGHT.docs</p>
+                  <div class="progress  blue lighten-4">
+                    <div class="determinate blue" style="width: 40%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row shrink">
+          <div id='rem'  class="col s12 m12 l7 offset-m3">
+
+            <div class="card">
+              <div class="card-title">
+                <i class="material-icons grey-text text-darken-1 left">error_outline</i>
+                <span class="bold">CCGPA Histogram</span>
+                <div class="divider"></div>
+              </div>
+              
+                <canvas id="cgpaChart" width="600" height="250"></canvas>
+
+              </div>
+            </div>
+
+          <div id='rem' class="col s12 m12 l5 offset-m3">
+            <div class="card">
+              <div class="card-title valign-wrapper">
+                <i class="valign material-icons grey-text text-darken-1 left">school</i>
+                <span class="bold">Top schools</span>
+              </div>
+              <div class="divider"></div>
+              <div class="card-content card4">
+                <section>
+                  
+                      <ul class="left schools">
+                      <span class="list_text">Schools</span>
+                    </ul>
+
+                   
+                    <ul class="right applicants">
+                       <span class="list_text right">Applicants</span><br>
+                       
+                    </ul>
+       
+
+                </section>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script type="text/javascript" src="js/Chart.js"></script>
+      <script type="text/javascript" src="js/custom_js.js"></script>
+  </body>
+</html>
